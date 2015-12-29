@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Project version="2G - 2.0.4" name="STM32F407_DEMO_XMG">
+  <Target name="STM32F407_DEMO_XMG" isCurrent="1">
+    <Device manufacturerId="9" manufacturerName="ST" chipId="259" chipName="STM32F407ZE" boardId="" boardName="" boardUrl="" coreId="4" coreName="Cortex M4"/>
+    <BuildOption>
+      <Compile>
+        <Option name="OptimizationLevel" value="0"/>
+        <Option name="UseFPU" value="0"/>
+        <Option name="UserEditCompiler" value=""/>
+        <Option name="SupportCPlusplus" value="0"/>
+        <Option name="DEBUG" value="2"/>
+        <Option name="WARNING" value="1"/>
+        <Includepaths>
+          <Includepath path="."/>
+        </Includepaths>
+        <DefinedSymbols>
+          <Define name="STM32F407ZE"/>
+        </DefinedSymbols>
+      </Compile>
+      <Link useDefault="0">
+        <Option name="DiscardUnusedSection" value="0"/>
+        <Option name="UserEditLinkder" value=""/>
+        <Option name="UseMemoryLayout" value="1"/>
+        <Option name="nostartfiles" value="0"/>
+        <Option name="LTO" value="0"/>
+        <Option name="IsNewStartupCode" value="1"/>
+        <LinkedLibraries/>
+        <MemoryAreas debugInFlashNotRAM="1">
+          <Memory name="IROM1" type="ReadOnly" size="0x00080000" startValue="0x08000000"/>
+          <Memory name="IRAM1" type="ReadWrite" size="0x00020000" startValue="0x20000000"/>
+          <Memory name="IROM2" type="ReadOnly" size="" startValue=""/>
+          <Memory name="IRAM2" type="ReadWrite" size="" startValue=""/>
+        </MemoryAreas>
+        <LocateLinkFile path="../../../appdata/roaming/coocox/coide/configuration/programdata/stm32f407_demo_xmg/arm-gcc-link.ld" type="0"/>
+      </Link>
+      <Output>
+        <Option name="OutputFileType" value="0"/>
+        <Option name="Path" value="./"/>
+        <Option name="Name" value="STM32F407_DEMO_XMG"/>
+        <Option name="HEX" value="1"/>
+        <Option name="BIN" value="1"/>
+      </Output>
+      <User>
+        <UserRun name="Run#1" type="Before" checked="0" value=""/>
+        <UserRun name="Run#1" type="After" checked="0" value=""/>
+      </User>
+    </BuildOption>
+    <DebugOption>
+      <Option name="org.coocox.codebugger.gdbjtag.core.adapter" value="ST-Link"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.debugMode" value="SWD"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.clockDiv" value="1M"/>
+      <Option name="org.coocox.codebugger.gdbjtag.corerunToMain" value="1"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.jlinkgdbserver" value="D:\Program Files (x86)\SEGGER\JLink_V490e\JLinkGDBServerCL.exe"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.userDefineGDBScript" value=""/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.targetEndianess" value="0"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.jlinkResetMode" value="Type 0: Normal"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.resetMode" value="SYSRESETREQ"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.ifSemihost" value="0"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.ifCacheRom" value="1"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.ipAddress" value="127.0.0.1"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.portNumber" value="2009"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.autoDownload" value="1"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.verify" value="1"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.downloadFuction" value="Erase Effected"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.defaultAlgorithm" value="C:\Users\Administrator\AppData\Roaming\CooCox\CoIDE\config\flash\CooCox-Flash\CoIDE_STM32F4xx_512K\STM32F4xx_512.elf"/>
+    </DebugOption>
+    <ExcludeFile/>
+  </Target>
+  <Components path="./"/>
+  <LocalComponents/>
+  <Files>
+    <File name="lib/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_usart.h" path="app/lib/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_usart.h" type="1"/>
+    <File name="lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_nor.c" path="app/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_nor.c" type="1"/>
+    <File name="lib/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma2d.h" path="app/lib/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma2d.h" type="1"/>
+    <File name="lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c" path="app/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c" type="1"/>
+    <File name="lib/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h" path="app/lib/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h" type="1"/>
+    <File name="lib/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h" path="app/lib/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h" type="1"/>
+    <File name="lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c" path="app/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c" type="1"/>
+    <File name="lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpi2c.c" path="app/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpi2c.c" type="1"/>
+    <File name="lib/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_sd.h" path="app/lib/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_sd.h" type="1"/>
+    <File name="lib/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_crc.h" path="app/lib/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_crc.h" type="1"/>
+    <File name="UCOSII/PORT/os_cpu.h" path="app/UCOSII/PORT/os_cpu.h" type="1"/>
+    <File name="lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c" path="app/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c" type="1"/>
+    <File name="lib/STM32F4xx_HAL_Driver/Inc/Legacy" path="" type="2"/>
+    <File name="lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fmc.c" path="app/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fmc.c" type="1"/>
+    <File name="cmsiscore/core_cmFunc.h" path="app/cmsiscore/core_cmFunc.h" type="1"/>
+    <File name="lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cec.c" path="app/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cec.c" type="1"/>
+    <File name="lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sram.c" path="app/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sram.c" type="1"/>
+    <File name="lib/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h" path="app/lib/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h" type="1"/>
+    <File name="lib/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pcd.h" path="app/lib/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pcd.h" type="1"/>
+    <File name="cmsiscore/arm_math.h" path="app/cmsiscore/arm_math.h" type="1"/>
+    <File name="lib/STM32F4xx_HAL_Driver/STM32F417xx_User_Manual.chm" path="app/lib/STM32F4xx_HAL_Driver/STM32F417xx_User_Manual.chm" type="1"/>
+    <File name="lib/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h" path="app/lib/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h" type="1"/>
+    <File name="lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_nand.c" path="app/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_nand.c" type="1"/>
+    <File name="lib/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_hash.h" path="app/lib/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_hash.h" type="1"/>
+    <File name="cmsiscore/core_cm3.h" path="app/cmsiscore/core_cm3.h" type="1"/>
+    <File name="lib/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2s_ex.h" path="app/lib/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2s_ex.h" type="1"/>
+    <File name="lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.c" path="app/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.c" type="1"/>
+    <File name="lib/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_wwdg.h" path="app/lib/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_wwdg.h" type="1"/>
+    <File name="lib/STM32F4xx_HAL_Driver/STM32F439xx_User_Manual.chm" path="app/lib/STM32F4xx_HAL_Driver/STM32F439xx_User_Manual.chm" type="1"/>
+    <File name="lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c" path="app/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c" type="1"/>
+    <File name="lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c" path="app/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c" type="1"/>
+    <File name="lib/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_hcd.h" path="app/lib/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_hcd.h" type="1"/>
+    <File name="lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c" path="app/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c" type="1"/>
+    <File name="lib/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rng.h" path="app/lib/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rng.h" type="1"/>
+    <File name="lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c" path="app/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c" type="1"/>
+    <File name="lib/STM32F4xx_HAL_Driver/STM32F411xE_User_Manual.chm" path="app/lib/STM32F4xx_HAL_Driver/STM32F411xE_User_Manual.chm" type="1"/>
+    <File name="UCOSII/CORE/os_flag.c" path="app/UCOSII/CORE/os_flag.c" type="1"/>
+    <File name="lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hash_ex.c" path="app/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hash_ex.c" type="1"/>
+    <File name="lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c" path="app/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c" type="1"/>
+    <File name="lib/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_conf_template.h" path="app/lib/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_conf_template.h" type="1"/>
+    <File name="lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_crc.c" path="app/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_crc.c" type="1"/>
+    <File name="UCOSII/CORE" path="" type="2"/>
+    <File name="lib/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h" path="app/lib/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h" type="1"/>
+    <File name="lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c" path="app/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c" type="1"/>
+    <File name="cmsisboot/system_stm32f4xx.c" path="app/cmsisboot/system_stm32f4xx.c" type="1"/>
+    <File name="lib/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dac.h" path="app/lib/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dac.h" type="1"/>
+    <File name="lib/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rtc.h" path="app/lib/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rtc.h" type="1"/>
+    <File name="cmsiscore/core_cmInstr.h" path="app/cmsiscore/core_cmInstr.h" type="1"/>
+    <File name="lib/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h" path="app/lib/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h" type="1"/>
+    <File name="cmsiscore/core_sc000.h" path="app/cmsiscore/core_sc000.h" type="1"/>
+    <File name="user/stm32f4xx_hal_msp.c" path="app/user/stm32f4xx_hal_msp.c" type="1"/>
+    <File name="lib/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_nand.h" path="app/lib/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_nand.h" type="1"/>
+    <File name="lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_smartcard.c" path="app/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_smartcard.c" type="1"/>
+    <File name="UCOSII/CONFIG/includes.h" path="app/UCOSII/CONFIG/includes.h" type="1"/>
+    <File name="lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hash.c" path="app/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hash.c" type="1"/>
+    <File name="UCOSII/PORT/os_cpu_c.c" path="app/UCOSII/PORT/os_cpu_c.c" type="1"/>
+    <File name="lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp.c" path="app/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp.c" type="1"/>
+    <File name="lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac_ex.c" path="app/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac_ex.c" type="1"/>
+    <File name="UCOSII/CORE/os_tmr.c" path="app/UCOSII/CORE/os_tmr.c" type="1"/>
+    <File name="lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_wwdg.c" path="app/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_wwdg.c" type="1"/>
+    <File name="cmsiscore/core_cm4.h" path="app/cmsiscore/core_cm4.h" type="1"/>
+    <File name="lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hcd.c" path="app/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hcd.c" type="1"/>
+    <File name="lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c" path="app/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c" type="1"/>
+    <File name="lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spdifrx.c" path="app/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spdifrx.c" type="1"/>
+    <File name="cmsisboot/system_stm32f4xx.h" path="app/cmsisboot/system_stm32f4xx.h" type="1"/>
+    <File name="lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc.c" path="app/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc.c" type="1"/>
+    <File name="lib/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h" path="app/lib/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h" type="1"/>
+    <File name="cmsiscore/core_cm7.h" path="app/cmsiscore/core_cm7.h" type="1"/>
+    <File name="lib/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2c.h" path="app/lib/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2c.h" type="1"/>
+    <File name="UCOSII/CONFIG" path="" type="2"/>
+    <File name="lib/STM32F4xx_HAL_Driver" path="" type="2"/>
+    <File name="lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dcmi.c" path="app/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dcmi.c" type="1"/>
+    <File name="lib/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h" path="app/lib/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h" type="1"/>
+    <File name="lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c" path="app/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c" type="1"/>
+    <File name="lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_qspi.c" path="app/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_qspi.c" type="1"/>
+    <File name="lib/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h" path="app/lib/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h" type="1"/>
+    <File name="lib/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_fmc.h" path="app/lib/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_fmc.h" type="1"/>
+    <File name="lib/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_smartcard.h" path="app/lib/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_smartcard.h" type="1"/>
+    <File name="lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c" path="app/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c" type="1"/>
+    <File name="lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac.c" path="app/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac.c" type="1"/>
+    <File name="lib/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pccard.h" path="app/lib/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pccard.h" type="1"/>
+    <File name="lib/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h" path="app/lib/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h" type="1"/>
+    <File name="lib/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spdifrx.h" path="app/lib/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spdifrx.h" type="1"/>
+    <File name="lib/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dcmi_ex.h" path="app/lib/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dcmi_ex.h" type="1"/>
+    <File name="txgljbsp/led.h" path="app/txgljbsp/led.h" type="1"/>
+    <File name="lib/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_sram.h" path="app/lib/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_sram.h" type="1"/>
+    <File name="lib/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dcmi.h" path="app/lib/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dcmi.h" type="1"/>
+    <File name="UCOSII/PORT/os_cpu_a.S" path="app/UCOSII/PORT/os_cpu_a.S" type="1"/>
+    <File name="lib/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cryp_ex.h" path="app/lib/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cryp_ex.h" type="1"/>
+    <File name="lib/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h" path="app/lib/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h" type="1"/>
+    <File name="lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_msp_template.c" path="app/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_msp_template.c" type="1"/>
+    <File name="lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c" path="app/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c" type="1"/>
+    <File name="cmsisboot/stm32f407xx.h" path="app/cmsisboot/stm32f407xx.h" type="1"/>
+    <File name="lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma2d.c" path="app/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma2d.c" type="1"/>
+    <File name="lib/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h" path="app/lib/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h" type="1"/>
+    <File name="cmsisboot/stm32f4_discovery.c" path="app/cmsisboot/stm32f4_discovery.c" type="1"/>
+    <File name="cmsisboot" path="" type="2"/>
+    <File name="lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c" path="app/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c" type="1"/>
+    <File name="lib/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2s.h" path="app/lib/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2s.h" type="1"/>
+    <File name="cmsiscore/core_cm0.h" path="app/cmsiscore/core_cm0.h" type="1"/>
+    <File name="UCOSII/CORE/os_mbox.c" path="app/UCOSII/CORE/os_mbox.c" type="1"/>
+    <File name="lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc_ex.c" path="app/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc_ex.c" type="1"/>
+    <File name="cmsisboot/startup_stm32f407xx.s" path="app/cmsisboot/startup_stm32f407xx.s" type="1"/>
+    <File name="cmsiscore" path="" type="2"/>
+    <File name="UCOSII/CONFIG/os_cfg.h" path="app/UCOSII/CONFIG/os_cfg.h" type="1"/>
+    <File name="lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c" path="app/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c" type="1"/>
+    <File name="UCOSII/CORE/os_mem.c" path="app/UCOSII/CORE/os_mem.c" type="1"/>
+    <File name="lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpi2c_ex.c" path="app/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpi2c_ex.c" type="1"/>
+    <File name="lib/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_sai.h" path="app/lib/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_sai.h" type="1"/>
+    <File name="user" path="" type="2"/>
+    <File name="lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_sdmmc.c" path="app/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_sdmmc.c" type="1"/>
+    <File name="cmsisboot/stm32f4_discovery.h" path="app/cmsisboot/stm32f4_discovery.h" type="1"/>
+    <File name="txgljbsp/led.c" path="app/txgljbsp/led.c" type="1"/>
+    <File name="lib/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h" path="app/lib/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h" type="1"/>
+    <File name="lib/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h" path="app/lib/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h" type="1"/>
+    <File name="lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c" path="app/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c" type="1"/>
+    <File name="user/stm32f4xx_it.h" path="app/user/stm32f4xx_it.h" type="1"/>
+    <File name="cmsiscore/core_cm0plus.h" path="app/cmsiscore/core_cm0plus.h" type="1"/>
+    <File name="lib/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_irda.h" path="app/lib/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_irda.h" type="1"/>
+    <File name="lib/STM32F4xx_HAL_Driver/Release_Notes.html" path="app/lib/STM32F4xx_HAL_Driver/Release_Notes.html" type="1"/>
+    <File name="lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd.c" path="app/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd.c" type="1"/>
+    <File name="lib" path="" type="2"/>
+    <File name="cmsisboot/stm32f4xx.h" path="app/cmsisboot/stm32f4xx.h" type="1"/>
+    <File name="lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_usart.c" path="app/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_usart.c" type="1"/>
+    <File name="lib/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_fmpi2c.h" path="app/lib/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_fmpi2c.h" type="1"/>
+    <File name="UCOSII/PORT" path="" type="2"/>
+    <File name="lib/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h" path="app/lib/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h" type="1"/>
+    <File name="user/stm32f4xx_it.c" path="app/user/stm32f4xx_it.c" type="1"/>
+    <File name="lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c" path="app/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c" type="1"/>
+    <File name="cmsiscore/core_cmSimd.h" path="app/cmsiscore/core_cmSimd.h" type="1"/>
+    <File name="lib/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h" path="app/lib/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h" type="1"/>
+    <File name="lib/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_sdram.h" path="app/lib/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_sdram.h" type="1"/>
+    <File name="cmsiscore/core_sc300.h" path="app/cmsiscore/core_sc300.h" type="1"/>
+    <File name="lib/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h" path="app/lib/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h" type="1"/>
+    <File name="user/main.c" path="app/user/main.c" type="1"/>
+    <File name="lib/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h" path="app/lib/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h" type="1"/>
+    <File name="lib/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_can.h" path="app/lib/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_can.h" type="1"/>
+    <File name="lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usb.c" path="app/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usb.c" type="1"/>
+    <File name="lib/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_fsmc.h" path="app/lib/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_fsmc.h" type="1"/>
+    <File name="lib/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_eth.h" path="app/lib/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_eth.h" type="1"/>
+    <File name="lib/STM32F4xx_HAL_Driver/STM32F446xx_User_Manual.chm" path="app/lib/STM32F4xx_HAL_Driver/STM32F446xx_User_Manual.chm" type="1"/>
+    <File name="lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc.c" path="app/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc.c" type="1"/>
+    <File name="lib/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cec.h" path="app/lib/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cec.h" type="1"/>
+    <File name="lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sai.c" path="app/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sai.c" type="1"/>
+    <File name="lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sd.c" path="app/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sd.c" type="1"/>
+    <File name="lib/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dac_ex.h" path="app/lib/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dac_ex.h" type="1"/>
+    <File name="lib/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_hash_ex.h" path="app/lib/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_hash_ex.h" type="1"/>
+    <File name="lib/STM32F4xx_HAL_Driver/Inc" path="" type="2"/>
+    <File name="user/main.h" path="app/user/main.h" type="1"/>
+    <File name="UCOSII/CORE/os_core.c" path="app/UCOSII/CORE/os_core.c" type="1"/>
+    <File name="lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pccard.c" path="app/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pccard.c" type="1"/>
+    <File name="cmsiscore/arm_const_structs.h" path="app/cmsiscore/arm_const_structs.h" type="1"/>
+    <File name="lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fsmc.c" path="app/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fsmc.c" type="1"/>
+    <File name="lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp_ex.c" path="app/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp_ex.c" type="1"/>
+    <File name="lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_eth.c" path="app/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_eth.c" type="1"/>
+    <File name="lib/STM32F4xx_HAL_Driver/Src" path="" type="2"/>
+    <File name="lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rng.c" path="app/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rng.c" type="1"/>
+    <File name="cmsiscore/arm_common_tables.h" path="app/cmsiscore/arm_common_tables.h" type="1"/>
+    <File name="UCOSII/CORE/os_mutex.c" path="app/UCOSII/CORE/os_mutex.c" type="1"/>
+    <File name="lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd_ex.c" path="app/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd_ex.c" type="1"/>
+    <File name="lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_irda.c" path="app/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_irda.c" type="1"/>
+    <File name="user/stm32f4xx_hal_conf.h" path="app/user/stm32f4xx_hal_conf.h" type="1"/>
+    <File name="lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c" path="app/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c" type="1"/>
+    <File name="lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c" path="app/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c" type="1"/>
+    <File name="lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_iwdg.c" path="app/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_iwdg.c" type="1"/>
+    <File name="UCOSII/CORE/os_task.c" path="app/UCOSII/CORE/os_task.c" type="1"/>
+    <File name="lib/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h" path="app/lib/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h" type="1"/>
+    <File name="UCOSII" path="" type="2"/>
+    <File name="lib/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pcd_ex.h" path="app/lib/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pcd_ex.h" type="1"/>
+    <File name="txgljbsp" path="" type="2"/>
+    <File name="lib/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rtc_ex.h" path="app/lib/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rtc_ex.h" type="1"/>
+    <File name="lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dcmi_ex.c" path="app/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dcmi_ex.c" type="1"/>
+    <File name="lib/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_qspi.h" path="app/lib/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_qspi.h" type="1"/>
+    <File name="lib/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h" path="app/lib/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h" type="1"/>
+    <File name="lib/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cryp.h" path="app/lib/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cryp.h" type="1"/>
+    <File name="lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sai_ex.c" path="app/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sai_ex.c" type="1"/>
+    <File name="lib/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2c_ex.h" path="app/lib/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2c_ex.h" type="1"/>
+    <File name="lib/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_sdmmc.h" path="app/lib/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_sdmmc.h" type="1"/>
+    <File name="lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s_ex.c" path="app/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s_ex.c" type="1"/>
+    <File name="lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c" path="app/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c" type="1"/>
+    <File name="lib/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_iwdg.h" path="app/lib/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_iwdg.h" type="1"/>
+    <File name="UCOSII/CORE/os_time.c" path="app/UCOSII/CORE/os_time.c" type="1"/>
+    <File name="lib/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_nor.h" path="app/lib/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_nor.h" type="1"/>
+    <File name="lib/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h" path="app/lib/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h" type="1"/>
+    <File name="lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sdram.c" path="app/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sdram.c" type="1"/>
+    <File name="lib/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_fmpi2c_ex.h" path="app/lib/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_fmpi2c_ex.h" type="1"/>
+    <File name="lib/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_sai_ex.h" path="app/lib/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_sai_ex.h" type="1"/>
+    <File name="lib/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usb.h" path="app/lib/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usb.h" type="1"/>
+    <File name="UCOSII/CORE/os_q.c" path="app/UCOSII/CORE/os_q.c" type="1"/>
+    <File name="lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s.c" path="app/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s.c" type="1"/>
+    <File name="lib/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_ltdc.h" path="app/lib/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_ltdc.h" type="1"/>
+    <File name="UCOSII/CORE/os_sem.c" path="app/UCOSII/CORE/os_sem.c" type="1"/>
+    <File name="UCOSII/CORE/ucos_ii.h" path="app/UCOSII/CORE/ucos_ii.h" type="1"/>
+  </Files>
+  <Bookmarks/>
+</Project>
